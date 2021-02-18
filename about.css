@@ -4,7 +4,18 @@
     font-weight: normal;
     font-style: normal;
 }
+body {
+    background-color: #D1E0F4;
+}
 p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+article {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -30,7 +41,6 @@ h1 {
     font-style: normal;
     font-size: 70px;
     line-height: 1.6;
-    text-align: center;
     color: black;
 }
 .navimg {
@@ -73,7 +83,8 @@ a {
     grid-column: 3 / span 1;
     background-color: white;
     place-self: center;
-    padding: 10px;
+    padding: 70px;
+    background-color: #D1E0F4;
 }
 .article_long_left {
     grid-column: 1 / span 2;
@@ -82,7 +93,8 @@ a {
     grid-column: 1 / span 1;
     background-color: white;
     place-self: center;
-    padding: 10px;
+    padding: 70px;
+    background-color: #D1E0F4;
 }
 .smaabilleder {
     display: grid;
