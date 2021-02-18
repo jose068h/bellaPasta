@@ -9,111 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Pasta</title>
-    <style>
-        img {
-            width: 100%;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhz1hyo.css">
 
-        section {
-            padding: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-gap: 20px;
-        }
 
-        article {
-            /*border: 1px solid black;*/
-            background-color: antiquewhite;
-            padding: 20px;
-        }
-
-        p {
-            text-align: center;
-            font-family: bely, serif;
-            font-weight: 400;
-            font-style: italic;
-            font-size: 20px;
-            font-style: normal;
-            margin-bottom: 0;
-            line-height: 1.6;
-        }
-
-        h2 {
-            font-family: bely, serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 30px;
-            margin-bottom: 0;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        h1 {
-            /*font-family: 'Helvetica Neue', sans-serif;
-            font-size: 70px;
-            font-weight: 300;*/
-            font-family: bely, serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 70px;
-            line-height: 1.6;
-            text-align: center;
-            color: red;
-        }
-        /*nav med første splash*/
-        /*
-        nav {
-            float: none;
-            position: absolute;
-            top: 2%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-            margin-top: 29vw;
-        }
-*/
-        /*nav med pyramide*/
-
-        nav {
-            float: none;
-            position: absolute;
-            top: 36%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-top: 30vw;
-        }
-
-        .valgt {
-            background-color: red;
-        }
-
-        button {
-            background-color: #2A0DFC;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            display: inline-block;
-            font-size: 20px;
-            font-family: bely, serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        @media screen and (max-width: 600px) {
-            button {
-                margin-top: 1vw;
-                margin-right: 68vw;
-                font-size: 12px;
-                padding: 5px 10px;
-            }
-            nav {
-                margin-top: 0vw;
-            }
-        }
-
-    </style>
 </head>
 
 
@@ -121,19 +20,28 @@
 
 
 <body>
-    <!--<img src="billeder/splash1-01.svg" alt="splash">-->
-    <img src="billeder/pyramide-03.svg" alt="splash">
-    <header>
-        <h1>MENU</h1>
-        <nav>
-            <button data-retter="alle" class="valgt">Alle</button>
-            <button data-retter="forretter">Forretter</button>
-            <button data-retter="hovedretter">Hovedretter</button>
-            <button data-retter="sideorders">Sideorders</button>
-            <button data-retter="desserter">Desserter</button>
-            <button data-retter="drikkevarer">Drikkevarer</button>
-        </nav>
-    </header>
+   <header>
+    <nav>
+        <a href="menu.html">MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="locations.html">LOCATIONS</a>
+        <a href="contact.html">CONTACT</a>
+
+
+    </nav>
+    <a href="menu.html"><img class="navimg" src="logo'er/logobl%C3%A5-02.svg" alt="img"></a>
+
+
+</header>
+    <h1>MENU</h1>
+    <container class="menu">
+        <button data-retter="alle" class="valgt">Alle</button>
+        <button data-retter="forretter">Forretter</button>
+        <button data-retter="hovedretter">Hovedretter</button>
+        <button data-retter="sideorders">Sideorders</button>
+        <button data-retter="desserter">Desserter</button>
+        <button data-retter="drikkevarer">Drikkevarer</button>
+    </container>
     <template>
         <article class="indhold">
 
@@ -261,6 +169,37 @@
         }
 
     </script>
+    <footer id="footer">
+        <div class="section_wrapper">
+            <div class="col">
+                <img src="logo'er/logo-02.svg" alt="logo">
+
+            </div>
+            <div class="col1">
+                <div class="col2">
+                    <h3>ROME</h3>
+                    <p>Via dei Fienaroli
+                        <br> 23-11, 00153
+                        <br> Roma RM,
+                        <br> Italiy
+                    </p>
+                </div>
+
+                <div class="col2">
+                    <div class="top">
+                        <h3>POSITANO</h3>
+                        <p>Via Tagliata
+                            <br> 32B, 84017
+                            <br> Positano SA,
+                            <br> Italiy
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
